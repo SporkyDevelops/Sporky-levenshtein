@@ -14,16 +14,21 @@ A very simple Levenshtein-based spell checker that finds approximate matches for
 ### Build and Run
 1. Clone this repository:
 ```bash
-git clone 
-cd
+git clone https://github.com/SporkyDevelops/Sporky-levenshtein.git
+cd Sporky-levenshtein
 ```
 2. Build the project:
 ```bash
 cargo build --release
 ```
-3. Run the application:
+3. Copy wordlist
 ```bash
-./target/release/spork-checker
+cp src/en.txt /target/release/en.txt
+```
+4. Run the application:
+```bash
+cd /target/release/
+./spork-checker
 ```
 
 ## Usage
