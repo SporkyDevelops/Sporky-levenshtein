@@ -1,6 +1,7 @@
 # Spork Checker
+![Rust](https://img.shields.io/badge/Rust-v1.0-orange?logo=rust&style=flat-square)
 
-A very simple Levenshtein-based spell checker that finds approximate matches for a given word by comparing to a word list.
+A very simple Levenshtein-based spell checker that finds approximate matches for a given word by comparing to a word list. Implemented in rust.
 
 ## Features
 - **Levenshtein Distance Calculation**: Find similar words based on edit distance.
