@@ -62,7 +62,7 @@ Possible Matches:
 ## Word List
 The application reads a word list from en.txt. This files is built into the binary, if not specify the path in the `read_word_list` function.
 
-## Equation:
+## Equation
 
 <img src="https://latex.codecogs.com/png.image?\inline&space;\dpi{190}\bg{white}lev_{a,b}(i,j)=\left\{\begin{matrix}min\left\{\begin{matrix}lev_{a,b}(i-1,j)&plus;1\\lev_{a,b}(i,j-1)&plus;1\\lev_{a,b}(i-1,j-1)&plus;\delta(a[i-1],b[j-1])\\\end{matrix}\right.\end{matrix}\right." title="lev_{a,b}(i,j)=\left\{\begin{matrix}min\left\{\begin{matrix}lev_{a,b}(i-1,j)&plus;1\\lev_{a,b}(i,j-1)&plus;1\\lev_{a,b}(i-1,j-1)&plus;\delta(a[i-1],b[j-1])\\\end{matrix}\right.\end{matrix}\right." />
 
@@ -74,7 +74,7 @@ The application reads a word list from en.txt. This files is built into the bina
 (i-1, j-1) substitution
 ```
 
-### Matrix Example:
+### Matrix Example
 ![Source: Datumorphism](https://github.com/user-attachments/assets/86affff9-95cc-4086-8add-33841a474a82)
 <sub>Photo source: Datumorphism</sub>
 
