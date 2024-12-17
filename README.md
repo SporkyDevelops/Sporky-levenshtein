@@ -17,6 +17,10 @@ A very simple Levenshtein-based spell checker that finds approximate matches for
 - Rust installed on your system. You can install it using [rustup](https://rustup.rs/).
 
 ### Build and Run
+**From crates.io:**
+- `cargo install sporky-checker`
+
+**From source:**
 1. Clone this repository:
 ```bash
 git clone https://github.com/SporkyDevelops/Sporky-levenshtein.git
