@@ -35,11 +35,11 @@ A very simple Levenshtein-based spell checker that finds approximate matches for
 spork-checker [OPTIONS] [TARGET]
 ```
 ### Arguments
-[TARGET]: The target word to check against the word list.
+**[TARGET]**: The target word to check against the word list.
 
 ### Options
--v, --verbose: Show detailed output, including the Levenshtein distance for each match.
--n, --number <NUMBER>: Specify the number of matches to display (default: 5).
+**-v, --verbose**: Show detailed output, including the Levenshtein distance for each match.
+**-n, --number *<NUMBER>***: Specify the number of matches to display (default: 5).
 
 ## Example
 
