@@ -54,9 +54,9 @@ The application reads a word list from en.txt. Ensure this file exists in the sa
 
 ## Equation:
 
-![Equation Main](https://latex.codecogs.com/svg.image?\inline&space;\bg{white}lev_{a,b}(i,j)=\left\{\begin{matrix}min\end{matrix}\right.\left\{\begin{matrix}lev_{a,b}(i-1,j)&plus;1\\lev_{a,b}(i,j-1)&plus;1\\lev_{a,b}(i-1,j-1)&plus;\delta(a[i-1],b[j-1])\end{matrix}\right." title="lev_{a,b}(i,j)=\left\{\begin{matrix}min\end{matrix}\right.\left\{\begin{matrix}lev_{a,b}(i-1,j)+1\\lev_{a,b}(i,j-1)+1\\lev_{a,b}(i-1,j-1)+\delta(a[i-1],b[j-1])\end{matrix}\right.)
+![Equation Main](https://latex.codecogs.com/svg.image?\inline&space;\bg{white}&space;lev_{a,b}(i,j)=\left\{\begin{matrix}min\left\{\begin{matrix}lev_{a,b}(i-1,j)&plus;1\\lev_{a,b}(i,j-1)&plus;1\\lev_{a,b}(i-1,j-1)&plus;\delta(a[i-1],b[j-1])\\\end{matrix}\right.\end{matrix}\right.)
 
-![Equation Where](https://latex.codecogs.com/svg.image?\inline&space;\bg{white}\begin{matrix}where&\delta(a[i-1],b[j-1])=0\\if&a[i-1]=b[j-1]\\otherwise&\delta=1\\\end{matrix}" title="\begin{matrix}where&\delta(a[i-1],b[j-1])=0\\if&a[i-1]=b[j-1]\\otherwise&\delta=1\\\end{matrix})
+![Equation Where](https://latex.codecogs.com/svg.image?\inline&space;\bg{white}\begin{matrix}where&\delta(a[i-1],b[j-1])=0\\if&a[i-1]=b[j-1]\\otherwise&\delta=1\\\end{matrix})
 
 ```
 (i-1, j) deletion
