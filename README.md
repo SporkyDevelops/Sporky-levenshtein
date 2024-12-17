@@ -9,7 +9,7 @@ A very simple Levenshtein-based spell checker that finds approximate matches for
 
 ## Crates
 - *Clap*: Makes CLI argument parsing easier
-- *Rust-Embed*: Allows baking of data folders into binary
+- *Rust-Embed*: Allows building of data folders directly into binary
 
 ## Installation
 
