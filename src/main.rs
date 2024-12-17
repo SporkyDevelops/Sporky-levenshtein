@@ -1,5 +1,5 @@
 use std::io::Error;
-use levenshtein_checker::{levenshtein_distance, read_word_list};
+use sporky_checker::{levenshtein_distance, read_word_list};
 use clap::{error::ErrorKind, Parser};
 use cli::Cli;
 pub mod cli;

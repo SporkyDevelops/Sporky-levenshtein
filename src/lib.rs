@@ -1,3 +1,9 @@
+use rust_embed::Embed;
+
+#[derive(Embed)]
+#[folder = "data/"]
+struct Asset;
+
 /// Computes the Levenshtein distance between two strings.
 ///
 /// # Arguments
@@ -68,11 +74,18 @@ pub fn levenshtein_distance(a: &str, b: &str) -> usize {
 
 ///takes file name and parses lines
 pub fn read_word_list(file_name: &str) -> Vec<String> {
+
     let mut list = Vec::new();
-    if let Ok(lines) = std::fs::read_to_string(file_name) {
-        for line in lines.lines() {
-            list.push(line.to_string());
+
+    if let Some(file) = Asset::get(file_name){
+        if let Ok(lines) = std::str::from_utf8(file.data.as_ref()) {
+            for line in lines.lines() {
+                list.push(line.to_string());
+            }
         }
+    } else {
+        eprintln!("File '{}' not found in embedded assets!", file_name);
     }
+
     list
 }
