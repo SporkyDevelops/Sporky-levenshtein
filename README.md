@@ -21,7 +21,7 @@ cd Sporky-levenshtein
 ```bash
 cargo build --release
 ```
-3. Copy wordlist
+3. Copy wordlist:
 ```bash
 cp src/en.txt /target/release/en.txt
 ```
