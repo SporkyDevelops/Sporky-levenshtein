@@ -6,6 +6,7 @@ pub mod cli;
 
 fn main() { 
 
+    //initialize app
     std::process::exit(match app() {
         Ok(_) => 0,
         Err(error) => {
