@@ -31,11 +31,11 @@ cargo build --release
 spork-checker [OPTIONS] [TARGET]
 ```
 ### Arguments
-**[TARGET]**: The target word to check against the word list.
+**`[TARGET]`**: The target word to check against the word list.
 
 ### Options
-- **-v, --verbose**: Show detailed output, including the Levenshtein distance for each match.
-- **-n, --number *[NUMBER]***: Specify the number of matches to display (default: 5).
+- **`-v`, `--verbose`**: Show detailed output, including the Levenshtein distance for each match.
+- **`-n`, `--number [NUMBER]`**: Specify the number of matches to display (default: 5).
 
 ## Example
 
@@ -50,7 +50,7 @@ Possible Matches:
 ```
 
 ## Word List
-The application reads a word list from en.txt. Ensure this file exists in the same directory as the binary or specify the path in the read_word_list function.
+The application reads a word list from en.txt. Ensure this file exists in the same directory as the binary or specify the path in the `read_word_list` function.
 
 ## Equation:
 
@@ -68,5 +68,5 @@ The application reads a word list from en.txt. Ensure this file exists in the sa
 ![Source: Datumorphism](https://github.com/user-attachments/assets/86affff9-95cc-4086-8add-33841a474a82)
 
 
-#### Author
-Sporky Develops
+>#### Author
+> Sporky Develops
