@@ -4,8 +4,12 @@
 A very simple Levenshtein-based spell checker that finds approximate matches for a given word by comparing to a word list. Implemented in rust.
 
 ## Features
-- **Levenshtein Distance Calculation**: Find similar words based on edit distance.
-- **Customizable Results**: Set the number of matches and verbosity.
+- **Levenshtein Distance**: Uses Levenshtein Algorithm to calculate possible matches
+- **Customizable output**: Verbose and matches options
+
+## Crates
+- *Clap*: Makes CLI argument parsing easier
+- *Rust-Embed*: Allows baking of data folders into binary
 
 ## Installation
 
@@ -22,11 +26,7 @@ cd Sporky-levenshtein
 ```bash
 cargo build --release
 ```
-3. Copy wordlist:
-```bash
-cp src/en.txt /target/release/
-```
-4. Run the application:
+3. Run the application:
 ```bash
 cd /target/release/
 ./spork-checker
@@ -56,7 +56,7 @@ Possible Matches:
 ```
 
 ## Word List
-The application reads a word list from en.txt. Ensure this file exists in the same directory as the binary or specify the path in the `read_word_list` function.
+The application reads a word list from en.txt. This files is built into the binary, if not specify the path in the `read_word_list` function.
 
 ## Equation:
 
