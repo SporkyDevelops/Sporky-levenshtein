@@ -86,6 +86,5 @@ pub fn read_word_list(file_name: &str) -> Vec<String> {
     } else {
         eprintln!("File '{}' not found in embedded assets!", file_name);
     }
-
     list
 }

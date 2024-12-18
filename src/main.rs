@@ -1,5 +1,5 @@
 use std::io::Error;
-use sporky_checker::{levenshtein_distance, read_word_list};
+use sporky_checker::*;
 use clap::{error::ErrorKind, Parser};
 use cli::Cli;
 use colored::Colorize;
@@ -37,7 +37,6 @@ fn app() -> Result<(), Error>{
     else {
         target = args.target.unwrap();
     }
-
 
     for word in list.iter() {
         let distance = levenshtein_distance(&target, word);

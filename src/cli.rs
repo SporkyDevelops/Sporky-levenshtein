@@ -19,5 +19,5 @@ pub struct Cli {
         help = "Change the number of matches shown",
         long_help = "The number of words the program will show. The default value is 5."
     )]
-    pub number: usize
+    pub number: usize,
 }

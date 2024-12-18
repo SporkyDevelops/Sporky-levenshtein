@@ -2,7 +2,7 @@
 name = "sporky-checker"
 version = "1.0.1"
 edition = "2021"
-description = "Simple levenshtein spell checker app"
+description = "Simple levenshtein spell checker app #cli #distance #algorithm"
 license = "Apache-2.0"
 
 [[bin]]
