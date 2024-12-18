@@ -2,6 +2,8 @@ use std::io::Error;
 use sporky_checker::{levenshtein_distance, read_word_list};
 use clap::{error::ErrorKind, Parser};
 use cli::Cli;
+use colored::Colorize;
+
 pub mod cli;
 
 fn main() { 
@@ -27,7 +29,7 @@ fn app() -> Result<(), Error>{
         let mut cmd = clap::Command::new("spork-checker [TARGET] [OPTIONS]");
 
         let error = cmd.error(ErrorKind::MissingRequiredArgument, 
-            format!("Argument {} was not provided", target)
+            format!("{} {} {}", "Argument".red().bold(), target, "was not provided".red().bold())
         );
 
         clap::Error::exit(&error);
@@ -40,7 +42,7 @@ fn app() -> Result<(), Error>{
     for word in list.iter() {
         let distance = levenshtein_distance(&target, word);
         if distance == 0 {
-            println!("Your spelling checks out!");
+            println!("{}", "Your spelling checks out!".green().bold());
             std::process::exit(0);
         }
         else if distance <= 4 {
@@ -52,19 +54,19 @@ fn app() -> Result<(), Error>{
     let top_words = &matches[..matches.len().min(args.number)];
 
     if !args.verbose {
-        println!("Possible Matches: ");
+        println!("{} ", "Possible Matches:".purple().bold() );
         for (word, _distance) in top_words {
-            println!(" - '{}'", word);
+            println!(" {} '{}'", "-".blue().bold(), word);
         }
 
         std::process::exit(0);
     }
 
     if args.verbose {
-        println!("Possible Matches: ");
+        println!("{} ", "Possible Matches:".purple().bold());
         
         for (word, distance) in top_words {
-            println!("Word: '{}' with a distance of: '{}'", word, distance);
+            println!("{} '{}' {} '{}'","Word:".purple(), word, "with a distance of:".purple(), distance);
         }
 
         std::process::exit(0);
